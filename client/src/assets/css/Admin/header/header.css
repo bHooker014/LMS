@@ -1,0 +1,70 @@
+.nav-header-container{
+    padding: 1rem;
+ background-color:  #0d2228;
+ display: flex;
+ border-bottom: 1px solid #16747c;
+}
+
+.welcome{
+    font-size: 1.4rem;
+    color: #7f7f7f;
+    width: 60%;
+}
+
+.nav-container-btns{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    
+   
+}
+
+/***************** header btns*********** */
+
+.btn-home{
+    font-size: 1rem;
+    background-color: transparent;
+    padding: .15rem;
+    margin-right: .5rem;
+    border: none;
+    outline: none;
+    color: #7f7f7f;
+    border-radius: .18rem;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.7s ease-in-out;
+   
+}
+
+.btn-logout{
+    font-size: 1rem;
+    background-color: transparent;
+    padding: .15rem;
+    margin-right: .5rem;
+    border: none;
+    outline: none;
+    color: #7f7f7f;
+    border-radius: .18rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.7s ease-in-out;
+}
+
+.btn-home:hover{
+    color: #16747c;
+    transition: all 0.7s ease-in-out;
+  
+}
+
+.btn-logout:hover{
+    color: #16747c;
+    transition: all 0.7s ease-in-out;
+}
+
+.btn-home:focus{
+outline: none;
+}
+
+.btn-logout:focus{
+   outline: none;
+}

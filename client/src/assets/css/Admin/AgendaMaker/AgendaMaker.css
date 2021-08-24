@@ -1,0 +1,97 @@
+/* // **************** todolist ********************* */
+
+
+.main-agenda-maker-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 92vh ;
+    color: #adbbb8;
+ 
+  }
+
+
+  .agenda-maker-container {
+    padding: 3rem;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  
+  .agenda-display{
+    width: 35rem;
+    padding: 3rem 1rem;
+  }
+
+  .agenda-list{
+    overflow-y: auto;
+    overscroll-behavior-y: auto;
+    max-height: 52vh;
+  }
+  .calendar-wrapper {
+    max-width: 25rem;
+    padding: 2.5rem 3rem;
+  }
+
+  .input-form-agenda{
+    font-size: 1rem;
+    height: 2rem !important;
+    outline: none;
+    border-radius: .15rem;
+    border: 2px solid #5c5c5b !important;
+    margin-bottom: .5rem;
+    width: 100%;
+  }
+  
+  .input-form-agenda-textarea{
+    font-size: 1rem;
+    height: 20rem !important;
+    outline: none;
+    border-radius: .15rem;
+    border: 2px solid #5c5c5b !important;
+    margin-bottom: .5rem;
+    width: 100%;
+  }
+
+ .agenda-header-container{
+  color: #adbbb8;
+  text-align: center;
+ }
+
+ .agenda-form-container{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+
+ .cursor-pointer {
+   cursor: pointer;
+ }
+
+ .hour-task {
+   color: #161616;
+ }
+
+ .btn-agenda{
+  border: none;
+  border-radius: .18rem;
+  background-color: #565758;
+  color: #d3cfcb;
+  font-size: 1rem;
+  padding: .4rem;
+  margin-bottom: .5rem;
+
+}
+
+.btn-agenda:hover{
+  border: none;
+  border-radius: .18rem;
+  background-color: #16747c;
+  color: black;
+  font-size: 1rem;
+  padding: .4rem;
+
+}
+

@@ -1,0 +1,137 @@
+.overall-container-for-student-page {
+  background-color: #333;
+  height: 91.9vh;
+  display: grid;
+  grid-template-areas:
+    " addReport studentInfo"
+    "addReport reportCards";
+  grid-template-columns: 20rem 3fr;
+  grid-template-rows: 4rem 3fr;
+}
+
+/***** student add report add report ******/
+
+.student-add-report-container {
+  position: relative;
+  grid-area: addReport;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #333;
+  overflow: hidden;
+  border-right: 1px solid #16747c;
+}
+
+.form-containers-add-report {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* for the form with the rating and submit btn */
+.form-containers-add-report-bottom {
+  position: relative;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-select {
+  position: absolute;
+  right: 0;
+  margin-left: 0.75rem;
+  text-align: right;
+}
+
+/********** for the instructor information ********* */
+.instructor-info-on-add-reportCard {
+  background-color: #0d2228;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.18rem;
+  color: #7f7f7f;
+  height: 100px;
+  text-shadow: 2px 1px black;
+}
+/************** text area ************/
+.add_report_header {
+  font-size: 1rem;
+  color: #7f7f7f;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+}
+.reportCard-textArea {
+  height: 170px;
+  width: 300px;
+  background-color: #5c5c5b;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+}
+
+.reportCard-textArea:focus {
+  outline: none;
+  border-radius: 0.1rem;
+}
+/* ***** the button to add a report card  */
+.add-rating-btn {
+  background-color: #16747c;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  color: black;
+  border: none;
+  outline: none;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.add-rating-btn:hover {
+  background-color: #0d2228;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.teacher-logo-wrapper {
+  visibility: hidden;
+}
+
+.teacher-side-logo2 {
+  position: absolute;
+  left: 140px;
+  bottom: 130px;
+  height: 50px;
+  transform: rotate(-90deg);
+  filter: grayscale(100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.teacher-side-logo3 {
+  position: absolute;
+  left: 4px;
+  bottom: 265px;
+  height: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.teacher-side-logo4 {
+  position: absolute;
+  left: -38px;
+  transform: rotate(-45deg);
+  bottom: 111px;
+  height: 50px;
+  width: 354px;
+  filter: sepia(100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-height: 770px) {
+  .teacher-logo-wrapper {
+    visibility: visible;
+  }
+}

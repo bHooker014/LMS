@@ -1,0 +1,99 @@
+ 
+    .studentfinder-main-container{
+        background-color: #333;
+    grid-area: studentfinder;
+    overscroll-behavior-y: auto;
+    overflow-y: auto;
+    border-bottom: 1px #16747c solid;
+    }
+
+    /*********** body work******** */
+    .table-for-active-students{
+    background-color: #333;
+    width: 100%;
+   
+    }
+
+  th{
+      color: #7f7f7f;
+      padding: .3rem;
+      font-size: .9rem;
+      text-shadow: 2px 1px black;
+  }
+
+    .student-map-keys-container{
+    background-color: #7f7f7f;
+    }
+    .student-map-keys{
+   /* background-color: red; */
+   height: 5vh;
+    }
+
+
+    .keys-holder{
+ position: relative;
+  text-align: center;
+  overflow: hidden;
+  font-size: .9rem;
+    }
+
+    /* buttons for the student list********** */
+
+    .edit-student-btn{
+color: #0d2228;
+background-color: transparent;
+outline: none;
+border: none;
+cursor: pointer;
+font-weight: bolder;
+transition: all 0.5s ease-in-out;
+    }
+
+    .email-student-btn{
+        color: #0d2228;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+        transition: all 0.5s ease-in-out;
+    }
+ .edit-student-btn:hover{
+ color: #16747c;
+transition: all 0.5s ease-in-out;
+ }
+        
+ .email-student-btn:hover{
+      color:#16747c;
+     transition: all 0.5s ease-in-out;
+ }
+
+ /********** rate btn********* */
+
+ .rate-btn{
+    position: absolute;
+    color: #7f7f7f;
+    left: -30px;
+    bottom: 13px;
+    background-color: #0d2228;
+    width: 90px;
+    outline: none;
+    border: none;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    font-weight: bold;
+    opacity: .7;
+    transition: all 0.5s ease-in-out;
+ }
+
+ .rate-btn:hover{
+opacity: 1;
+transition: all 0.5s ease-in-out;
+     }
+
+
+     /******* stars ***** */
+
+     .stars-yo{
+         color: #0d2228 !important;
+     }

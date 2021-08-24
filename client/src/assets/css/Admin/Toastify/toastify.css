@@ -1,0 +1,16 @@
+.Toastify__toast-container {
+   right: 5rem !important;
+   top: 4rem !important;
+  } 
+  
+
+
+   .Toastify__toast{
+    background-color:  #0d2228 !important;
+    color: #7f7f7f !important;
+    font-weight: bolder;
+  }
+
+  .Toastify__progress-bar {
+    visibility: hidden !important;
+  }

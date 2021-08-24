@@ -1,0 +1,93 @@
+/* // ********** Calendar stuff **************** */
+
+.calendar-main-container {
+  grid-area: calendar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 15rem;
+  background-color: #333;
+  border-bottom: #16747c 1px solid;
+}
+
+.body {
+  width: 100%;
+}
+
+.day-names {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.week {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #16747c;
+  width: 20%;
+}
+
+.week-container {
+  width: 100%;
+}
+
+.day {
+  position: relative;
+  width: calc(100% / 7);
+  height: 44px;
+  display: inline-block;
+  background-color: #7f7f7f;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.before {
+  color: rgb(93, 74, 74);
+}
+
+.today {
+  border-radius: 0.18rem;
+  background-color: #333;
+  color: white;
+}
+
+.selected {
+  border-radius: 0.18rem;
+  color: white;
+  background-color: #0d2228;
+}
+
+/* ***********  Header ************* */
+
+.calendar-header-container {
+  background-color: #0d2228;
+  color: #7f7f7f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  height: 2.15rem;
+  font-weight: 500;
+}
+.header-current {
+    font-weight: 800;
+}
+
+.header-previous {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.header-next {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}

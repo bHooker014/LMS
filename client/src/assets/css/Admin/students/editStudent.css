@@ -1,0 +1,46 @@
+/* .edit-student-main-modal-container{
+
+} */
+
+.form-editStudent-modal-container{
+display: flex;
+flex-direction: column;
+margin-top: .5rem;
+}
+
+.input-style-editStudent{
+    line-height: 25px;
+    border: 2px inset #565758e3 !important;
+    outline: none;
+}
+
+.form-editStudent-radio-modal-container{
+    margin-top: .5rem;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.btn-modal-editStudent{
+width: 100px;
+padding: .3rem;
+outline: none;
+border: none;
+background-color:#565758e3 ;
+color: white;
+transition: all 0.5s ease-in-out;
+cursor: pointer;
+}
+
+.btn-modal-editStudent:hover{
+    background-color:#16747c ;
+    color: black;
+    transition: all 0.5s ease-in-out
+    }
+
+    .header-edit-modal{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+            }

@@ -1,0 +1,29 @@
+{
+  "name": "LearningManagementSystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "concurrently \"nodemon server.js\" \"npm run mailServer\"",
+    "client": "npm start --prefix client",
+    "clientTwo": "npm start --prefix clientTwo",
+    "mailServer": "npm run dev --prefix lms-mail-mongo-server",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run clientTwo\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^2.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}

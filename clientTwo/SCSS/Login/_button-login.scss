@@ -1,0 +1,21 @@
+
+
+.sign-in-btn{
+    border: none;
+    border-radius: .18rem;
+    background-color: $secondary-color;
+    color: $text-primary;
+    font-size: 1rem;
+    padding: .4rem;
+    @include transition-ease;
+}
+
+.sign-in-btn:hover{
+    border: none;
+    border-radius: .18rem;
+    background-color: $highlight-color;
+    color: black;
+    font-size: 1rem;
+    padding: .4rem;
+    @include transition-ease;
+}

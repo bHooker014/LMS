@@ -1,0 +1,11 @@
+/* // **************** todolist ********************* */
+.main-todo-maker-container {
+  display: flex;
+  height: 100vh;
+}
+
+.todo-maker-container {
+  padding: 2.2rem;
+  background: pink;
+}
+/*# sourceMappingURL=todolist.css.map */

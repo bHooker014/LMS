@@ -1,0 +1,47 @@
+body {
+  background-color: #333;
+}
+
+.dashboad-main-container {
+  height: 92vh;
+  display: grid;
+  grid-template-areas:
+    "nav studentinfo studentfinder studentfinder"
+    "nav email agenda calendar ";
+  grid-template-columns: 0.1fr 2fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  /* background-color: rgb(134, 137, 143); */
+  background-color: #333;
+}
+
+/* ********** custom scroll bar ************ */
+
+   /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:  #adbbb8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* ********** admin edit page ******************* */
+.admin-container {
+  height: 91.8vh;
+  background: url("../../img/custom-persevere-two.jpg") rgba(4, 37, 45, 0.9);
+  background-blend-mode: overlay;
+  background-size: cover;
+  width: 100%;
+}

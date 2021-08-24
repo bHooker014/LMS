@@ -1,0 +1,85 @@
+.d3-pen{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: #3e3c44;
+
+
+}
+
+.code-editor-home-button{
+    margin: .5rem;
+}
+
+.d3-left-pane{
+    width: 35%;
+   height: 100%;
+.button-back{
+    background: #0e0d0f;
+    width: fit-content;
+} 
+   .tab-cont{
+       padding-left: 8px;
+       margin-top: 8px;
+    
+:first-child{
+    border-top-left-radius: .5rem;
+}
+:last-child{
+    border-top-right-radius: .5rem;
+    
+}
+
+
+       button{
+          
+           background: #0e0d0f;
+           color: rgb(85, 85, 85);
+           border: none;
+           padding: 10px;
+       }
+
+       button:focus{
+           outline: none;
+       }
+
+       .active-tab{
+        background: #201f23;
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
+        color: white;
+       }
+   }
+
+   .editor-container{
+    padding-top: 0;
+    height: 90%;
+
+    .editor-title{
+border-top-left-radius: 0px !important;
+
+    }
+    
+
+       .CodeMirror{
+           height: 90%;
+       }
+   }
+}
+
+.d3-right-pane{
+   
+    height: 90%;
+    width: 65%;
+padding: 20px;
+    background: #3e3c44;
+
+    iframe{
+        
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 6px 1px inset rgb(93, 91, 105);
+        
+       
+    }
+}

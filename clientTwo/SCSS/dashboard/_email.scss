@@ -1,0 +1,332 @@
+.messages{
+    background: #0d2228;
+   
+}
+
+.emailhead{
+    background: #161616;
+    padding: 7px;
+    color:   $font-color;
+    margin: 0;
+}
+
+.inboxWrapper {
+  
+    height: 36rem;
+    background: #1a272b;
+}
+.inbox-inner-wapper{
+    overscroll-behavior-y: auto;
+    overflow-y: auto;
+    height: 33rem;
+}
+
+.letter {
+    padding-bottom: 4px;
+}
+
+.email-table-container{
+   
+
+.email{
+    background: #1a272b;
+    padding: 10px;
+    border-bottom: #adbbb83b .5px solid;
+    display: flex;
+    min-height: 110px;
+
+    .email_letter{
+        background: rgba(95, 168, 174, 0.5);
+        padding: 10px;
+        font-size: 2rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px 0 10px;
+        color: $font-color;
+        
+    }
+
+.email_details{
+    width: 80%;
+}
+
+
+
+    .email_sender{
+        color: $font-color;
+        font-weight: 600;
+        padding: 0; 
+        margin: 0;
+    }
+    .email_subject{
+        color: $font-color;
+        font-weight: 400;
+        padding: 0; 
+        margin: 0;
+    }
+    .email_body{
+        color: $font-color;
+        font-weight: 300;
+        padding: 0; 
+        margin: 0;
+    }
+}
+
+
+
+
+}
+.table{
+    width: 100%;
+}
+
+.table-head{
+background: #11443f;
+
+}
+.mail-top{
+    grid-area: head;
+    background: #1a272b;
+    color: $font-color;
+    border-bottom: #adbbb83b .5px solid;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+.mail-logo{
+    display: flex;
+    align-items: center;
+}
+
+
+
+    .inbox-title{
+        padding-left: 20px;
+        font-size: 1.3rem;
+    }
+
+    .compose{
+    margin-right: 50px;
+        
+        display: flex;
+        align-items: center;
+        :nth-child(1){
+            margin: 0 20px;
+        }
+    }
+
+}
+
+.mailbox{
+ 
+   
+display: grid;
+grid-template-rows: 1fr 10fr;
+grid-template-columns: 1fr 5fr;
+grid-template-areas: "head head";
+height: 100%;
+
+
+
+
+.mail-left{
+    height: 100%;   
+    background: #1a272b;
+    overscroll-behavior-y: auto;
+    overflow-y: auto;
+}
+
+.mail-right{
+     background: #1a272b;
+     
+     box-shadow: inset 1px 1px 3px #161616;
+    overscroll-behavior-y: auto;
+    overflow-y: auto;
+}
+
+
+    .email{
+        background: #1a272b;
+        padding: 10px;
+        border-bottom: #adbbb83b .5px solid;
+        display: flex;
+        min-height: 110px;
+        word-break: break-all;
+        word-wrap: break-word;
+        :hover{
+            cursor: pointer;
+        }
+    
+        .email_letter{
+            background: rgba(95, 168, 174, 0.5);
+            padding: 10px;
+            font-size: 1.8rem;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px 0 10px;
+            color: $font-color;
+            
+        }
+    
+    .email_details{
+        width: 80%;
+    }
+    
+    
+    
+        .email_sender{
+            color: $font-color;
+            font-weight: 600;
+            padding: 0; 
+            margin: 0;
+        }
+        .email_subject{
+            color: $font-color;
+            font-weight: 400;
+            padding: 0; 
+            margin: 0;
+        }
+        .email_body{
+            color: $font-color;
+            font-weight: 300;
+            padding: 0; 
+            margin: 0;
+        }
+    }
+
+
+.current-message{
+background: #c7c7c710;
+margin: 40px; 
+border-radius: 20px;
+min-height: 80%;
+padding: 30px;
+color: $font-color;
+word-break: break-all;
+word-wrap: break-word;
+white-space: pre-wrap;
+}
+
+.message-head{
+    padding-bottom: 20px;
+    border-bottom: #adbbb83b .5px solid;
+    display: flex;
+    justify-content: space-between;
+
+    .fromField{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .message-head-icons{
+        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+       
+    }
+
+}
+.message-body{
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+
+}
+
+//compose
+
+.compose-page{
+    height: 100%;
+}
+
+.compose-container{
+
+    background: $tertiary-color;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-form{
+
+    // border: 1px dashed $subtle-border;
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset #12171b 0px 0px 3px 3px;
+}
+.compose-head{
+    border-bottom: 1px solid $subtle-border;
+    display: flex; 
+    flex-direction: column;
+    input{
+        background: transparent;
+        color: $font-color;
+        margin: 10px 20px 20px 20px; 
+        padding: 10px; 
+        font-size: 1.1rem;
+        border-radius: 7px;
+        border: .5px solid $subtle-border;
+    }
+}
+
+.attachment-bar{
+ 
+    padding: 10px; 
+     color: $font-color;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.att-btn{
+    margin-right: 30px;
+}.compose-body{
+    height: 60%;
+    padding: 0 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.email-body{
+    width: 100%;
+    background: transparent;
+    border: 1px solid $subtle-border;
+    height: 100%;
+    border-radius: 7px;
+    color: #fff;
+    padding: 10px;
+}
+
+.inbox-btn{
+    margin-left: .5rem;
+    border: none;
+    border-radius: .18rem;
+    background-color: $secondary-color;
+    color: $text-primary;
+    font-size: 1rem;
+    padding: .4rem;
+    @include transition-ease;
+}
+
+.inbox-btn:hover{
+    border: none;
+    border-radius: .18rem;
+    background-color: $highlight-color;
+    color: black;
+    font-size: 1rem;
+    padding: .4rem;
+    @include transition-ease;
+}

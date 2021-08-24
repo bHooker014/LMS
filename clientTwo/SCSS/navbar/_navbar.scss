@@ -1,0 +1,237 @@
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background: $tertiary-color;
+    
+}
+
+.navbar-main-container{
+  width: 100%;
+  position: relative;
+  background: $tertiary-color;
+//  border-bottom: 1px solid $subtle-border;
+}
+
+.nav-item {
+    margin: 1px;
+    padding: 5px; 
+    background: $primary-color;
+    color: $text-primary;
+    cursor: pointer;
+    @include transition-ease;
+    a {        
+    text-decoration: none;
+    color: $text-primary;
+    }
+    
+    &:hover {
+        @include transition-ease;
+        color: $text-secondary;
+        background: $highlight-color;
+    }
+
+    
+}
+.nav-row {
+    background: $secondary-color;
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.menu-btn:hover{
+  background-color: #333333;
+  border-radius: .18rem;
+}
+.menu-btn {
+    position: absolute;
+    left: .5rem;
+    top: .7rem;
+    height: 30px;
+    width: 40px;
+    z-index: 2;
+  background-color: transparent;
+  // border: 1px solid black;
+    cursor: pointer;
+    @include transition-ease;
+
+    &__burger {
+        position: absolute;
+        right: .3rem;
+        top: 0.85rem;
+        width: 27px;
+        height: 2px;
+        background-color: $highlight-color;
+       
+        @include transition-ease;
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0px;
+            top: -8px;
+            width: 30px;
+            height: 2px;
+            background-color: $highlight-color;
+            @include transition-ease;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: 0px;
+            width: 30px;
+            height: 2px;
+            background-color: $highlight-color;
+            @include transition-ease;
+        }
+
+        &.open {
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+                // background-color: $secondary-color;
+                right: -4px;
+            }
+
+            &::after {
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+                right: -4px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+   /* The side navigation menu */
+   .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 53px;
+    left: 0;
+    background-color: $pop-out-color; 
+    overflow-x: hidden;
+    padding-top: 45px; /* Place content 60px from the top */
+    @include transition-ease; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: .9;
+  }
+
+
+.newsidenav{
+list-style: none;
+padding-left: 5px;
+  li{
+    text-decoration: none;
+  }
+
+}
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.9s;
+    @include transition-ease;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    @include transition-ease;
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: -2px;
+    color: $secondary-color;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 50px;
+    @include transition-ease;
+    &:hover{
+      color: $text-primary;
+      @include transition-ease;
+    }
+  }
+  
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+ //== progress
+
+ .progress-head{
+   color: $font-color;
+   font-size: 1.3rem;
+   margin: 0;
+   margin-bottom: 10px;
+ }
+
+ .progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #7f7f7f;
+  border-radius: 0.25rem;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #3d676c;
+  transition: width 0.6s ease;
+}
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
+.progress-bar-animated {
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}

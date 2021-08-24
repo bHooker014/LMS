@@ -1,0 +1,92 @@
+.register-btn{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1rem;
+  color: #16747c;
+  border: none;
+  padding: none;
+  margin: none;
+  width: 85%;
+ background-color: transparent;
+ cursor: pointer;
+  transition: all ease-in-out .5s;
+  margin-top: .5rem;
+  font-weight: bold;
+}
+
+.register-btn:hover{
+    color: #7f7f7f ;
+    transition: all ease-in-out .5s;
+  }
+
+  .register-btn:active{
+    outline: none;
+    border: none;
+    padding: none;
+    margin: none;
+    background-color: transparent;
+  }
+
+  .register-btn:focus{
+    outline: none;
+    border: none;
+    padding: none;
+    margin: none;
+    background-color: transparent;
+  }
+
+  /* **************** btn -register in the modal*************  */
+
+  .register-btn-modal{
+    font-size: 1rem;
+    padding: .3rem;
+      display: block;
+      width: 100%;
+      border: none;
+   background-color: #7f7f7f;
+   color: white;
+   cursor: pointer;
+   transition: all ease-in-out .5s;
+  }
+
+  
+
+  .register-btn-modal:hover{
+    background-color: #16747c;
+    color: black;
+    transition: all ease-in-out .5s;
+   }
+
+
+  /* ************** container holdin info in modal ************ */
+  .register-container-modal{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    align-items: center;
+    color:#7f7f7f;
+  }
+
+  .register-form-containers{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+    width: 45vw;
+    font-size: .9rem;
+    height: 2rem;
+    outline: none;
+    border: 2px solid #5c5c5b !important;
+   }
+
+   .register-form-containers-div{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+   }
+
+
+   .register-header-modal{
+    font-size: 1.2rem;
+   }

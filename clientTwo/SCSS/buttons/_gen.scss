@@ -1,0 +1,39 @@
+.stupid-a-tags{
+  @include anchor-problems;
+  }
+
+  .stupid-a-tags:active{
+  @include anchor-problems;
+  }
+
+  .stupid-a-tags:focus{
+@include anchor-problems;
+  }
+
+
+  // ****************logout btns *****************
+.logout-btn{
+  @include anchor-problems;
+}
+
+.logout-btn:focus{
+@include anchor-problems;
+}
+.logout-btn:active{
+  @include anchor-problems;
+  }
+
+// *************login name btn ****************
+  .login-name-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  color: $secondary-color;
+  font-size: 1.2rem;
+  @include transition-ease;
+  }
+
+  .login-name-btn:hover{
+  color: $text-primary;
+  @include transition-ease;
+  }

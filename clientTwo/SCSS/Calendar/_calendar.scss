@@ -1,0 +1,102 @@
+
+
+
+    // ********** Calendar shit ****************
+  
+
+    .calendar-main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20rem;
+        .body{
+            width: 100%;
+        }
+
+        .day-names {
+           width: 100%;
+            display: flex;
+            justify-content: space-between;
+           
+            .week{
+             display: inline-block;
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+             z-index: 1;
+             text-align: center;
+              background-color: rgb(12, 68, 70);
+              color: $font-color;
+            width: 20%;
+            }
+        }
+
+        .week-container{
+            width: 100%;
+        }
+    .day {
+        position: relative;
+        width: calc( 100% / 7);
+        height: 44px;
+        display: inline-block;
+        background-color: $tertiary-color;
+        color: $font-color;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        z-index: 1;
+        text-align: center;
+        cursor: pointer;
+
+        
+        .before {
+            color: dimgray
+        }
+        .today{
+            border-radius: .18rem;
+            background-color: rgb(117, 116, 116);
+        }
+        .selected{
+            border-radius: .18rem;
+            color: white;
+            background-color: rgba(16, 194, 161, 0.322);
+        }
+
+     
+    }
+ }
+
+
+//***********  Header *************
+
+.calendar-header-container{
+    background-color: #161616;
+    color: #adbbb8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    height: 2.2rem;
+}
+
+.header-current {
+    position: relative;
+    top: 5px;
+}
+
+.header-previous{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: .5rem;
+    position: relative;
+    bottom: 10px;
+}
+
+.header-next{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: .5rem;
+    bottom: 5px;
+    position: relative;
+    bottom: 10px;
+}

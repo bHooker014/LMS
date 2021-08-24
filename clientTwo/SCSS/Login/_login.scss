@@ -1,0 +1,110 @@
+// ******* Login Containers Login Containers *************
+
+.login-main-container {
+ 
+  background: url("../img/custom-persevere-two.jpg"), #f7f7f7;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-color:#090d0e;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.login-inner-container {
+  border-radius: 0.18rem;
+  background-color: $tertiary-color;
+  width: 90%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  // opacity: .98;
+  color: $font-color;
+  box-shadow: #000000 1px 1px 10px 5px;
+
+  h3{
+    text-align: center;
+  }
+  input{
+    margin-top: 5px;
+    background: #23232428;
+    border: none;
+    padding: 10px; 
+    box-shadow: inset rgb(15, 15, 15) 0px 0px 10px 1px;
+    border-radius: 7px; 
+    color: $font-color;
+
+  
+  }  input:focus{
+    outline: none;
+      border: 1px #adbbb814 solid;
+    
+    }
+}
+
+// ******* Login Containers Login Containers *************
+
+// ************* Login Sign Card ********************* 
+
+.login-user {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin-top: 1rem;
+}
+
+.input-style {
+
+   border-radius: .18rem;
+    height: 25px;
+
+   
+}
+
+// ************* Login Sign Card ********************* 
+
+
+//****************  baby navbar ***************************
+
+.baby-navbar-login{
+  background-color: $pop-out-color;
+  width: 100%;
+position: fixed;
+top: 0px;
+border-bottom: solid 2px $highlight-color;
+}
+
+.img-login-placement{
+ 
+height: 50px;
+}
+
+
+//****************  baby navbar ***************************
+
+@include media-md {
+  .login-inner-container{
+    width: 60%;
+    
+  }
+
+  .login-user{
+    width: 50vw;
+  }
+}
+
+@include media-lg {
+  .login-inner-container{
+    width: 45%;
+
+  }
+  .login-user{
+    width: 40vw;
+  }
+}
+

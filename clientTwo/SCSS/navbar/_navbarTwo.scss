@@ -1,0 +1,88 @@
+// // ************ top nav top nav ************** 
+.nav2-anchors{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $secondary-color;
+    @include transition-ease;
+}
+
+.nav2-anchors:hover{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $text-primary;
+    @include transition-ease;
+}
+
+.nav2{
+    background-color: $tertiary-color;
+    display: flex;
+}
+
+.nav-right-container-sm{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+.logo-placement-container-sm{
+   
+    display: flex;
+    width: 100%;
+   }
+
+
+.img-log-placement{
+    margin-left: .5rem;
+height: 40px;
+}
+
+.nav-right-container-lg{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.side-item{
+    p{
+        margin: 0;
+        color: $accent-color;
+    }
+}
+
+
+
+
+
+@include media-sm{
+    .nav-right-container-lg{
+        visibility: hidden;
+    }
+    .nav-right-container-sm{
+     visibility: visible;
+    }
+  }
+
+  @include media-md {
+    .nav-right-container-lg{
+        visibility: visible;
+    }
+    .nav-right-container-sm{
+        visibility: hidden;
+       }
+}
+
+@include media-lg {
+    .nav-right-container-lg{
+    visibility: visible;
+    }
+    .nav-right-container-sm{
+        visibility: hidden;
+       }
+
+}
+
+

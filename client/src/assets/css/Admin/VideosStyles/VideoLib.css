@@ -1,0 +1,148 @@
+.lib-top {
+  grid-area: head;
+  background: #1a272b;
+  /* color: $font-color; */
+  border-bottom: #adbbb83b 0.5px solid;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.lib-logo {
+  display: flex;
+  align-items: center;
+}
+
+.lib-title {
+  color: #16747c;
+  display: flex;
+  padding-left: 20px;
+  font-size: 1.3rem;
+}
+
+.compose {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.inputCompose{
+  max-width: 15rem;
+  width: -webkit-fill-available;
+}
+
+.video-lib {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: 1fr 7fr;
+  grid-template-areas: "head head";
+  height: 92vh;
+}
+
+.video-left {
+  height: 100%;
+  background: #1a272b;
+  color: #565758;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-title {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+.subject-list {
+  text-align: center;
+  width: 5rem;
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+li:hover {
+  color: whitesmoke;
+}
+
+.video-right {
+  height: 99%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #1a272b;
+  box-shadow: inset 1px 1px 3px #161616;
+  overscroll-behavior-y: auto;
+  overflow-y: auto;
+  background-color: #333;
+}
+.vid-title-box {
+  padding: 5px;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+
+.video-btn{
+  border: none;
+  border-radius: .18rem;
+  background-color: #565758;
+  color: #d3cfcb;
+  font-size: 1rem;
+  padding: .4rem;
+  margin-left: .5rem;
+  margin-bottom: .5rem;
+
+}
+
+.video-btn:hover{
+  border: none;
+  border-radius: .18rem;
+  background-color: #16747c;
+  color: black;
+  font-size: 1rem;
+  padding: .4rem;
+
+}
+
+.vid-modal {
+  text-align: center;
+}
+
+.vid-title-preview {
+  text-align: center;
+}
+.video-card {
+  margin: 15px;
+  color: #16747c;
+  width: 260px;
+  height: 200px;
+  padding: 5px;
+  border: 2px solid #16747c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.video-card-header {
+  text-align: center;
+  height: 40%;
+}
+.videos-card-description {
+  color: whitesmoke;
+  text-align: center;
+  height: 30%;
+  word-wrap: break-word;
+  word-break: break-all;
+  
+}
+.delete-btn {
+  position: relative;
+  bottom: -10px;
+  align-self: flex-end;
+  
+}

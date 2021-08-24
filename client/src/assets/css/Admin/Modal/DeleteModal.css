@@ -1,0 +1,60 @@
+/* for whole page (really wish i was using SASS) */
+
+
+ .modal-content {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+} 
+
+.modal-body {
+  margin-bottom: 1rem;
+} 
+
+.modal-body h4 {
+  font-size: 1rem;
+  color: #7f7f7f;
+}
+
+.delete-student-header{
+  text-align: center;
+
+}
+
+    /* 8******* Delete Buttons ******** */
+    
+      
+          .delete-button-student{
+      width: 100px;
+      padding: .3rem;
+      outline: none;
+      border: none;
+      background-color:#af1919e3 ;
+      color: white;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+          }
+       .delete-button-student:hover{
+              background-color:#ff0000e3 ;
+              color: rgb(209, 199, 199);
+              transition: all 0.5s ease-in-out;     
+       }
+
+
+       .agree-to-delete-user{
+        width: 150px;
+        padding: .3rem;
+        outline: none;
+        border: none;
+        background-color:#af1919e3 ;
+        color: white;
+        transition: all 0.7s ease-in-out;
+        cursor: pointer;
+       }
+
+       .agree-to-delete-user:hover{
+        background-color:#ff0000e3 ;
+        color: rgb(209, 199, 199);
+        transition: all 0.7s ease-in-out;    
+       }

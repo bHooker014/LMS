@@ -1,0 +1,55 @@
+.code-challenge-container{
+
+    background: #23333a;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.right-side{
+    
+}
+
+.description{
+    padding: 20px; 
+}
+
+.editor-input{
+    padding: 10px; 
+height: 60%;
+background: #263238;
+box-shadow: inset 0px 0px 7px#0b1416;
+margin: 10px;
+}
+
+.editor-output{
+    padding: 10px; 
+    background: #263238;
+    height: 20%;
+    box-shadow: inset 0px 0px 7px#000000;
+    overflow-y: auto;
+    margin: 10px;
+
+}
+
+.test-items{
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    margin-bottom: 5px;
+   
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+
+    svg{
+        margin-right: 20px;
+    } 
+
+    .functionCall{
+        color: rgb(146, 204, 231)
+    }
+}

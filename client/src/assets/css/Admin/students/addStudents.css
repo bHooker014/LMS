@@ -1,0 +1,102 @@
+.student-addStudent{
+    grid-area: studentinfo;
+    border-right: 1px solid #16747c ;
+    border-bottom: 1px solid #16747c ;
+}
+
+
+/* header for add student  */
+.header_add_student{
+    margin-left: .5rem;
+width: 100%;
+text-shadow: 2px 1px black;
+}
+.add-student-inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: #333;
+color: #7f7f7f;
+padding: .3rem;
+
+}
+
+.add-student-input-containers{
+    margin: .5rem;
+ display: flex;
+ flex-direction: column;
+ width: 95%;
+ color: black;
+ background-color: #7f7f7f;
+ border-radius: .18rem;
+ box-shadow: 0px 0px 3px 3px rgb(36, 34, 34);
+}
+
+
+.container-inside-container{
+    margin: .5rem;
+ display: flex;
+ flex-direction: column;
+ font-size: .9rem;
+}
+/* ********* input style ************ */
+
+.add-student-input-style{
+    line-height: 25px;
+    border: 2px solid #565758e3 !important;
+    /* box-shadow: 1px .5px 1px .5px black; */
+    background-color: #5c5c5b;
+    color: white;
+    outline: none;
+}
+
+.add-student-input-style:focus{
+    line-height: 25px;
+    border: 2px solid #565758e3 !important;
+    /* box-shadow: 1px .5px 1px .5px black; */
+    background-color: #5c5c5b;
+    color: white;
+    outline: none;
+    }
+
+
+/* ************ add button *********** */
+    .add-btn-form{
+       
+     width: 100%;
+     margin-top: .5rem;
+     margin-bottom: .5rem;
+     padding: .3rem;
+     background-color: #16747c;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     transition: all 0.5s ease-in-out
+    }
+
+    .add-btn-form:hover{
+        width: 100%;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        padding: .3rem;
+        background-color: #0d2228;
+        color: white;
+        border: none;
+        outline: none;
+        transition: all 0.5s ease-in-out
+       }
+
+       .add-btn-form:hover:focus{
+      border: none;
+      outline: none;
+       }
+
+
+       .addStudent-label{
+        padding-bottom: .4rem !important;
+        padding-top: .4rem !important;
+       }
+       /* label{
+           padding: .3rem;
+       } */

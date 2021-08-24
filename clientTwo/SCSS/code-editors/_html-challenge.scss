@@ -1,0 +1,14 @@
+.html-challenge{
+display: flex;
+width: 100vw;
+height: 100vh;
+background: hsl(255, 6%, 25%);
+color: white;
+}
+
+.challenge-pane, .code-pane, .display-pane{
+    flex-grow: 1;
+   margin: 1rem;
+    width: 30%;
+}
+

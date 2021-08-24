@@ -1,0 +1,111 @@
+/* all the containers for the report side */
+.report-card-main-container{
+    background-color: #333;
+    /* height: 100%; */
+}
+
+.inner-container-for-report-cards{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+height: 84.5vh;
+background-color: #0d2228;
+overflow-y: scroll;
+border-bottom: 1px solid #16747c;
+border-top: 1px solid #16747c;
+word-wrap: break-word;
+word-break: break-all;
+}
+
+
+.card-main-container{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    position: relative;
+ background-color: #7f7f7f;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 90%;
+ /* min-height: 50%; */
+ border-radius: .18rem;
+}
+
+/********* the delete button for the card***** */
+.delete-reportcard-btn{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+background-color: transparent;
+font-size: 2rem;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+/********** students name container******* */
+.instructor-card-info-container{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+}
+
+.content-card-container{
+    margin: 4rem .5rem;
+ background-color: #5c5c5b;
+ color: rgb(245, 245, 245);
+ border-radius: .18rem;
+ width: 90%;
+min-height: 60%;
+overflow: hidden;
+}
+
+.content-card-p{
+margin: 1rem;
+
+}
+
+.star-container-for-reportCard{
+position: absolute;
+right: 10px;
+bottom: 10px;
+}
+
+
+
+/* student info and stars on top of render of report cards ******** */
+
+.studentInfo-container{
+    grid-area: studentInfo;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 1rem;
+    background-color: #333;
+    color: #7f7f7f;
+    text-shadow: 2px 1px black;
+}
+
+.title-for-all-reports{
+margin-left: .5rem;
+}
+
+.container-for-info-students-and-stars{
+display: flex;
+flex-direction: column;
+}
+
+/********** date stamp on report card ******** */
+.date-stamp-report-card{
+font-style: italic;
+position: absolute;
+left: 10px;
+bottom: 10px;
+}
+
+
+
