@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 
 //middleware
-
+console.log("test")
 app.use(express.json());//built in express middleware, body parser. ablility to req.body
 app.use(express.urlencoded({extended:false}));
 app.use(cors());
